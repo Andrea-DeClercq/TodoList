@@ -367,6 +367,11 @@ html .clear-completed:active {
 	}
 }
 
+.todo-button {
+	border: solid 1px gray;
+	float: right;
+	padding: 2px;
+}
 @media (max-width: 430px) {
 	.footer {
 		height: 50px;
