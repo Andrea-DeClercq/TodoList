@@ -1,15 +1,13 @@
 'use strict';
 
-let checked = document.querySelector('#completed:checked') !== null;
-console.log('completed');
-document.getElementsByClassName('view').onclick = function(){
-    ifChecked(checked);
-}
 
-function ifChecked(checked){
-    if (checked === null){
-        console.log('pas check');
+console.log('completed');
+
+function ifChecked(){
+    if(document.getElementById('completed').checked == true){
+        console.log('ok');
     } else {
-        console.log('checked');
+        console.log('not ok');
     }
+
 }
