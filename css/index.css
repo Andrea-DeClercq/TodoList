@@ -246,6 +246,10 @@ label[for='toggle-all'] {
 	margin-bottom: -1px;
 }
 
+.destroyed{
+ background-color: darkslategray;
+}
+
 .footer {
 	color: #777;
 	padding: 10px 15px;
@@ -381,3 +385,5 @@ html .clear-completed:active {
 		bottom: 10px;
 	}
 }
+
+
