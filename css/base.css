@@ -10,8 +10,9 @@ hr {
 }
 
 .checked{
-	color: gray;
-	text-decoration: line-through;
+	color: white;
+	text-decoration: line-through 2px;
+	background-color: palevioletred;
 }
 
 .learn a {

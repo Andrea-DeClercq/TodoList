@@ -255,6 +255,11 @@ label[for='toggle-all'] {
 	margin-bottom: -1px;
 }
 
+.destroyed{
+ background-color: rgb(171, 93, 93);
+ text-decoration: line-through 3px ;
+}
+
 .footer {
 	color: #777;
 	padding: 10px 15px;
@@ -390,4 +395,5 @@ html .clear-completed:active {
 		bottom: 10px;
 	}
 }
+
 
