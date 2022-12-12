@@ -1,11 +1,7 @@
 
 
-function add_removeClass(elem) {
-    if ( document.getElementById("Todo").classList.contains("destroyed")) {
-        document.getElementById("Todo").classList.remove("destroyed");  
-    }
-    else{
-        elem.className="destroyed"
-    }
-   
+
+function add_removeClass() {
+    const Todo = document.getElementById('Todo')
+        Todo.classList.toggle("destroyed");     
 }
