@@ -5,6 +5,16 @@ hr {
 	border-bottom: 1px dashed #f7f7f7;
 }
 
+.todo-list li{
+	padding: 15px;
+}
+
+.checked{
+	color: white;
+	text-decoration: line-through 2px;
+	background-color: palevioletred;
+}
+
 .learn a {
 	font-weight: normal;
 	text-decoration: none;
