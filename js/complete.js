@@ -30,3 +30,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
         }
     });
 })
+
+function clearTask(){
+    console.log("Fonction appele")
+    document.querySelectorAll('checked')
+}
