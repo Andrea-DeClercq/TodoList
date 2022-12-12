@@ -15,6 +15,7 @@ function updateAddListener(){
             }
             else{
                 e.classList.add('checked');
+                e.list.color = "blue";
             }
         });
     });
