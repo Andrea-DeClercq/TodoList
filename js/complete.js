@@ -3,17 +3,29 @@
 
 console.log('completed');
 
-function ifChecked(){
-    if(document.getElementById('completed').checked = true){
-        console.log('ok');
-        document.getElementById('completed').style.color = "blue";
-    } else if(document.getElementById('completed').checked = false)  {
-        console.log('not ok');
-    }
+function updateAddListener(){
+    let list = document.querySelectorAll('.todo-list-item');
+    list.forEach(e => {
+        // Remove event listener to prevent multiple event listeners
+        e.removeEventListener('click', ()=>{});
+
+        e.addEventListener('click', () => {
+            if(e.classList.contains("checked")){
+                e.classList.remove('checked');
+            }
+            else{
+                e.classList.add('checked');
+            }
+        });
+    });
 }
 
-function test(){
-    if(document.getElementById('completed1').checked = true){
-        document.getElementById('top').style.background = "blue";
-    }
-}
+document.addEventListener('DOMContentLoaded', ()=>{
+    let input = document.querySelector('.new-todo');
+    
+    input.addEventListener('keypress', function(e) {
+        if(e.keyCode === 13){
+            updateAddListener();
+        }
+    });
+})
