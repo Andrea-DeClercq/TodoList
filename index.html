@@ -6,13 +6,18 @@
 	<title>To-do list app</title>
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/index.css">
+    <script src="js/app.js"></script>
 </head>
 
 <body>
 	<section class="todoapp">
 		<header class="header">
 			<h1>todos</h1>
+<<<<<<< HEAD
 			<input type="text" class="new-todo" placeholder="What needs to be done?" autofocus>
+=======
+			<input class="new-todo" id="input" placeholder="What needs to be done?" autofocus>
+>>>>>>> 9997cc8264236d1fbf61d290d08aca7dd80f6da3
 		</header>
 		<section class="main">
 			<input class="toggle-all" type="checkbox">
@@ -28,9 +33,15 @@
 
 			</ul>
 		</section>
+        <ul id="myUl">
+
+        </ul>
 		<footer class="footer">
 			<span class="todo-count"></span>
 			<ul class="filters">
+                <li>
+                    <span onclick="newItem()">Add</span >
+                </li>
 				<li>
 					<a href="#/" class="selected">All</a>
 				</li>
@@ -41,7 +52,7 @@
 					<a href="#/completed">Completed</a>
 				</li>
 			</ul>
-			<button class="clear-completed" onClick="clearCompleted()">Clear completed</button>
+			<button class="clear-completed">Clear completed</button>
 		</footer>
 	</section>
 	<footer class="info">
@@ -49,7 +60,7 @@
 		<p>Created by Oscar Godson</p>
 		<p>Refactored by Christoph Burgmer</p>
 	</footer>
-	<script src="js/script.js"></script>
+
 </body>
 <script src="js/Active.js"></script>
 </html>
