@@ -1,6 +1,11 @@
-let click_count = 0
 
-function addNewClass(elem) {
-    if(click_count)
-    elem.className="destroyed"
+
+function add_removeClass(elem) {
+    if ( document.getElementById("Todo").classList.contains("destroyed")) {
+        document.getElementById("Todo").classList.remove("destroyed");  
+    }
+    else{
+        elem.className="destroyed"
+    }
+   
 }

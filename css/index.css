@@ -256,7 +256,8 @@ label[for='toggle-all'] {
 }
 
 .destroyed{
- background-color: darkslategray;
+ background-color: rgb(171, 93, 93);
+ text-decoration: line-through 3px ;
 }
 
 .footer {
